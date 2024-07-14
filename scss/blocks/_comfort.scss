@@ -1,0 +1,121 @@
+.comfort-section{
+    position: relative;
+    padding: 120px 0px;
+    background-image: url("../../images/comfort__bg.png");
+    background-repeat: no-repeat;
+    background-size: 1240px 453px;
+    background-position: 156px 120px;
+
+    &::before{
+        position: absolute;
+        content: "Почему с нами выгоднее?";
+        width: 366px;
+        @include  textStyle($FS:48px, $FW:600, $LH:60px, $MB:0px, $CLR:$white-color);
+        left: 246px;
+        top: 272px;
+    }
+}
+.comfort__content-wrapper{
+    width: 100%;
+    margin-bottom: 190px;
+}
+.comfort__content-img{
+    display: block;
+}
+.comfort__content-img-tablet{
+    display: none;
+}
+.comfort__list {
+    margin-left: 50px;
+}
+.comfort__wrapper-content{
+    margin-top: 62px;
+    @include display($items:center, $space:start, $gap:175px);
+}
+.comfort__item {
+    width: 447px;
+    @include display($items:center, $space:start, $gap:40px);
+}
+.comfort__icon-lock {
+    width: 80px;
+    height: 80px;
+    padding: 0px 25px;
+    border-radius: 50px;
+    background-color: #E9E9EC;
+}
+
+.comfort__title {
+    @include  textStyle($FS:20px, $FW:600, $LH:27px, $MB:10px, $CLR:$title-color);
+
+}
+.comfort__text {
+    @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:0px, $CLR:$text-color);
+
+}
+
+
+//tablet
+
+@media only screen and (max-width:900px){
+    .comfort-section{
+        position: relative;
+        padding: 120px 0px;
+        background-image: url("../../images/comfort__bg.png");
+        background-repeat: no-repeat;
+        background-size: 729px 383px;
+        background-position: 156px 120px;
+    
+        &::before{
+            position: absolute;
+            content: "Почему с нами выгоднее?";
+            width: 300px;
+            @include  textStyle($FS:44px, $FW:600, $LH:55px, $MB:0px, $CLR:$white-color);
+            left: 98px;
+            top: 227px;
+        }
+    }
+    .comfort__content-wrapper{
+        width: 100%;
+        margin-bottom: 190px;
+    }
+    .comfort__content-img{
+        display: none;
+    }
+    .comfort__content-img-tablet{
+        display: block;
+    }
+    .comfort__list {
+        margin-left: 50px;
+    }
+    .comfort__wrapper-content{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .comfort__item {
+        width: 447px;
+    }
+    .comfort__icon-lock {
+        width: 80px;
+        height: 80px;
+        padding: 0px 25px;
+        border-radius: 50px;
+        background-color: #E9E9EC;
+    }
+    
+    .comfort__title {
+        @include  textStyle($FS:20px, $FW:600, $LH:27px, $MB:10px, $CLR:$title-color);
+    
+    }
+    .comfort__text {
+        @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:0px, $CLR:$text-color);
+    
+    }
+}
+
+//mobile
+
+@media only screen and (max-width:600px){
+    .comfort-section{
+        display: none;
+    }
+}

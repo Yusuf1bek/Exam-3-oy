@@ -1,0 +1,63 @@
+.site-footer {
+    padding: 80px 50px;
+    background-color: #0B7572;
+}
+.footer {
+    @include display($items:start, $space:start, $gap:56px);
+    margin-bottom: 120px;
+}
+.footer__logo-img {
+    margin-right: 134px;
+}
+.footer__list {
+    @include display($items:start, $space:start, $gap:177px);
+}   
+.footer__link{
+    @include  textStyle($FS:13px, $FW:600, $LH:19px, $MB:25px, $CLR:$white-color);
+    transition: all 0.5s ease;
+    &:hover{
+        color: $orange-color;
+    }
+
+}
+.footer__img{
+    margin-left: 25px;
+    margin-bottom: 32px;
+    color: white;
+    background-color: transparent;
+    transition: color 0.5s ease;
+
+    &:hover{
+        color: $orange-color;
+    }
+}
+.footer__number{
+    color: white;
+    margin-bottom: 32px;
+    transition: color 0.5s ease;
+    &:hover{
+        color: $orange-color;
+    }
+}
+.footer__btn {
+    margin-top: 32px;
+    outline: none;
+    border-color: transparent;
+    @include btnStyle($W:271px, $PY:8px,$BgColor:$orange-color, $BtnFS:13px, $BtnFW:600, $BtnLH:19px,$BtnMB:0px, $BtnTextColor:$white-color, $HoverBG:transparent, $HoverColor:$orange-color);
+
+}
+.footer__text {
+    text-align: center;
+    @include  textStyle($FS:12px, $FW:500, $LH:18px, $MB:0px, $CLR:$white-color);
+}
+
+@media only screen and (max-width:900px){
+    .site-footer {
+        padding: 50px 0px;
+        background-color: #0B7572;
+    }
+    .footer {
+        @include display($items:none, $space:none, $gap:0px);
+        margin-bottom: 120px;
+    }
+}

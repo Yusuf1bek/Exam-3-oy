@@ -1,0 +1,177 @@
+.work-section {
+    padding: 120px 80px;
+}
+
+.work__content-wrapper {
+    width: 535px;
+}
+.work__title {
+    @include  textStyle($FS:48px, $FW:600, $LH:60px, $MB:32px, $CLR:$title-color);
+}
+.work__text {
+    @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:56px, $CLR:$text-color);
+}
+.work__list {
+    @include display($items:center, $space:start, $gap:30px);
+}
+.work__item {
+    width: 393px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 6px rgba(34, 60, 80, 0.2);
+}
+.work__img{
+    display: block;
+}
+.work__img-tablet{
+    display: none;
+}
+.work__img-truck-mobile{
+    display: none;
+}
+.work__wrapper {
+    padding: 32px 32px;
+}
+.work__subtitle {
+    margin-top: 24px;
+    @include  textStyle($FS:20px, $FW:600, $LH:27px, $MB:16px, $CLR:$title-color);
+}
+.work__subtext {
+    @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:32px, $CLR:$text-color);
+}
+.work__strong {
+    @include  textStyle($FS:16px, $FW:600, $LH:21px, $MB:32px, $CLR:$title-color);
+    text-decoration: underline;
+    -webkit-text-decoration-color: $underline-color; 
+    text-decoration-color: $underline-color;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+
+    &:hover{
+        -webkit-text-decoration-color: $green-color; 
+        text-decoration-color: $green-color;
+    }
+}
+
+
+//tablet
+
+@media only screen and (max-width:900px){
+    .work-section {
+        padding: 100px 0px;
+    }
+    
+    .work__content-wrapper {
+        width: 535px;
+    }
+    .work__title {
+        @include  textStyle($FS:44px, $FW:600, $LH:55px, $MB:32px, $CLR:$title-color);
+    }
+    .work__list {
+        flex-direction: column;
+    }
+    .work__item {
+        width: 690px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 8px 6px rgba(34, 60, 80, 0.2);
+    }
+    .work__img{
+        display: none;
+    }
+    .work__img-tablet{
+        display: block;
+    }
+    .work__img-truck-mobile{
+        display: none;
+    }
+    .work__wrapper {
+        padding: 32px 32px;
+    }
+    .work__subtitle {
+        margin-top: 24px;
+        @include  textStyle($FS:20px, $FW:600, $LH:27px, $MB:16px, $CLR:$title-color);
+    }
+    .work__subtext {
+        @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:32px, $CLR:$text-color);
+    }
+    .work__strong {
+        @include  textStyle($FS:16px, $FW:600, $LH:21px, $MB:32px, $CLR:$title-color);
+        text-decoration: underline;
+        -webkit-text-decoration-color: $underline-color; 
+        text-decoration-color: $underline-color;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+    
+        &:hover{
+            -webkit-text-decoration-color: $green-color; 
+            text-decoration-color: $green-color;
+        }
+    }
+    .work__item:nth-child(3){
+        display: none;
+    }
+}
+
+
+//mobile
+@media only screen and (max-width:700px){
+    .work-section {
+        padding: 34px 0px;
+    }
+    
+    .work__content-wrapper {
+        width: 411px;
+    }
+    .work__title {
+        @include  textStyle($FS:28px, $FW:600, $LH:35px, $MB:24px, $CLR:$title-color);
+    }
+    .work__text {
+        @include  textStyle($FS:15px, $FW:400, $LH:22px, $MB:32px, $CLR:$text-color);
+    }
+    .work__list {
+        flex-direction: column;
+    }
+    .work__item {
+        width: 345px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 8px 6px rgba(34, 60, 80, 0.2);
+    }
+    .work__img{
+        display: none;
+    }
+    .work__img-tablet{
+        display: none;
+    }
+    .work__img-truck-mobile{
+        display: block;
+    }
+    .work__wrapper {
+        padding: 32px 32px;
+    }
+    .work__subtitle {
+        margin-top: 24px;
+        @include  textStyle($FS:20px, $FW:600, $LH:27px, $MB:16px, $CLR:$title-color);
+    }
+    .work__subtext {
+        @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:32px, $CLR:$text-color);
+    }
+    .work__strong {
+        @include  textStyle($FS:16px, $FW:600, $LH:21px, $MB:32px, $CLR:$title-color);
+        text-decoration: underline;
+        -webkit-text-decoration-color: $underline-color; 
+        text-decoration-color: $underline-color;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+    
+        &:hover{
+            -webkit-text-decoration-color: $green-color; 
+            text-decoration-color: $green-color;
+        }
+    }
+    .work__item:nth-child(2){
+        display: none;
+    }
+    .work__item:nth-child(3){
+        display: none;
+    }
+}
+

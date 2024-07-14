@@ -1,0 +1,231 @@
+.hero-section {
+    padding: 109px;
+}
+.hero {
+    @include display($items:center, $space:space-between, $gap:80px);
+    margin-bottom: 67px;
+}
+.hero__content-wrapper {
+    width: 552px;
+}
+.hero__title-wrapper{
+    width: 552px;
+    margin-bottom: 40px;
+}
+.hero__title {
+    @include  textStyle($FS:52px, $FW:600, $LH:65px, $MB:0px, $CLR:$title-color);
+}
+.hero__text {
+    @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:40px, $CLR:$text-color);
+}
+.hero__link {
+    @include  textStyle($FS:16px, $FW:600, $LH:24px, $MB:0px, $CLR:$link-color);
+    text-decoration: underline;
+    -webkit-text-decoration-color: $underline-color; 
+    text-decoration-color: $underline-color;
+    transition: all 0.3s ease-out;
+
+    &:hover{
+        -webkit-text-decoration-color: $green-color; 
+        text-decoration-color: $green-color;
+    }
+}
+.hero__img-truck {
+    display: block;
+}
+.hero__img-truck-tablet{
+    display: none;
+}
+.hero__img-truck-mobile{
+    display: none;
+}
+.hero__list{
+    @include display($items:center, $space:space-between, $gap:0px);
+    padding: 40px 56px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 8px 4px rgba(157, 157, 157, 0.2);
+}
+.hero__item {
+    max-width: 299px;
+    border-right: 1px solid #D7D7DD;
+}
+.hero__item:last-child{
+    max-width: 267px;
+    border-right: none;
+}
+.hero__manufacturers-img {
+    width: 92px;
+    height: 92px;
+    padding: 20px 0 ;
+    border-radius: 50px;
+    background-color: #E9E9EC;
+}
+.hero__sub-title {
+    margin-top: 24px;
+    @include  textStyle($FS:20px, $FW:600, $LH:27px, $MB:16px, $CLR:$title-color);
+}
+.hero__sub-text {
+    @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:0px, $CLR:$text-color);
+}
+
+//tablet
+
+
+@media only screen and (max-width:900px){
+    .hero-section {
+        padding: 117px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero__content-wrapper {
+        text-align: center;
+    }
+    .hero__title-wrapper{
+        margin-bottom: 49px;
+    }
+    .hero__title {
+        @include  textStyle($FS:44px, $FW:600, $LH:55px, $MB:0px, $CLR:$title-color);
+    }
+    .hero__link {
+        @include  textStyle($FS:16px, $FW:700, $LH:24px, $MB:0px, $CLR:$link-color);
+        text-decoration: underline;
+        -webkit-text-decoration-color: $underline-color; 
+        text-decoration-color: $underline-color;
+        transition: all 0.3s ease-out;
+    
+        &:hover{
+            -webkit-text-decoration-color: $green-color; 
+            text-decoration-color: $green-color;
+        }
+    }
+    .hero__img-truck {
+        display: none;
+    }
+    .hero__img-truck-tablet{
+        display: block;
+    }
+    .hero__img-truck-mobile{
+        display: none;
+    }
+    .hero__list{
+        flex-direction: column;
+        gap: 16px;
+        box-shadow: none;
+    }
+    .hero__item {
+        max-width: 500px;
+        padding: 19px 26px;
+        @include display($items:center, $space:start, $gap:23px);
+        border-radius: 30px;
+        box-shadow: 1px 1px 8px 4px rgba(157, 157, 157, 0.2);
+        border-right: none;
+    }
+    .hero__item:last-child{
+        max-width: 500px;
+        padding: 19px 26px;
+        @include display($items:center, $space:start, $gap:23px);
+        border-radius: 30px;
+        box-shadow: 1px 1px 8px 4px rgba(157, 157, 157, 0.2);
+        border-right: none; 
+    }
+    .hero__manufacturers-img {
+        width: 92px;
+        height: 92px;
+        padding: 11px 20px;
+        border-radius: 50px;
+        background-color: #E9E9EC;
+    }
+    .hero__sub-title {
+        margin-top: 24px;
+        @include  textStyle($FS:20px, $FW:600, $LH:27px, $MB:16px, $CLR:$title-color);
+    }
+    .hero__sub-text {
+        @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:0px, $CLR:$text-color);
+    }
+    
+      
+}
+
+
+//mobile
+
+
+@media only screen and (max-width:500px){
+    .hero-section {
+        padding: 75px 0;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero__content-wrapper {
+        text-align: left;
+        margin-left: 100px;
+    }
+    .hero__title-wrapper{
+        width: 303px;
+        margin-left: 35px;
+        margin-bottom: 49px;
+        text-align: left;
+    }
+    .hero__title {
+        @include  textStyle($FS:28px, $FW:600, $LH:35px, $MB:32px, $CLR:$title-color);
+    }
+    .hero__text {
+        @include  textStyle($FS:15px, $FW:400, $LH:22px, $MB:32px, $CLR:$text-color);
+    }
+    .hero__link {
+        @include  textStyle($FS:15px, $FW:700, $LH:22px, $MB:0px, $CLR:$link-color);
+        margin-left: 35px;
+        text-decoration: underline;
+        -webkit-text-decoration-color: $underline-color; 
+        text-decoration-color: $underline-color;
+        transition: all 0.3s ease-out;
+    
+        &:hover{
+            -webkit-text-decoration-color: $green-color; 
+            text-decoration-color: $green-color;
+        }
+    }
+    .hero__img-truck {
+        display: none;
+    }
+    .hero__img-truck-tablet{
+        display: none;
+    }
+    .hero__img-truck-mobile{
+        display: block;
+    }
+    .hero__list{
+        padding: 40px 56px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 8px 4px rgba(157, 157, 157, 0.2);
+    }
+    .hero__item {
+        box-shadow: none;
+        border-right: none;
+    }
+    .hero__item:last-child{
+        box-shadow: none;
+        border-right: none;
+    }
+    .hero__manufacturers-img {
+        width: 92px;
+        height: 92px;
+        padding: 14px ;
+        border-radius: 50px;
+        background-color: #E9E9EC;
+    }
+    .hero__sub-title {
+        margin-top: 24px;
+        @include  textStyle($FS:20px, $FW:600, $LH:27px, $MB:16px, $CLR:$title-color);
+    }
+    .hero__sub-text-wrapper{
+        width: 200px;
+    }
+    .hero__sub-text {
+        @include  textStyle($FS:16px, $FW:400, $LH:24px, $MB:0px, $CLR:$text-color);
+    }
+    
+      
+}
