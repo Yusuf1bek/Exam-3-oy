@@ -51,13 +51,8 @@
     @include  textStyle($FS:12px, $FW:500, $LH:18px, $MB:0px, $CLR:$white-color);
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:300px){
     .site-footer {
-        padding: 50px 0px;
-        background-color: #0B7572;
-    }
-    .footer {
-        @include display($items:none, $space:none, $gap:0px);
-        margin-bottom: 120px;
-    }
+        display: none;
+}
 }

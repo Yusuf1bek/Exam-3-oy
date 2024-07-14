@@ -908,16 +908,8 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 300px) {
   .site-footer {
-    padding: 50px 0px;
-    background-color: #0B7572;
-  }
-  .footer {
-    display: flex;
-    align-items: none;
-    justify-content: none;
-    gap: 0px;
-    margin-bottom: 120px;
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
